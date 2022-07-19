@@ -24,6 +24,7 @@ public class GroceryActivity extends AppCompatActivity {
     TextView mgPr3;
     TextView mgPr4;
     TextView mgPr5;
+    TextView name;
     FloatingActionButton add;
     FloatingActionButton add2;
     FloatingActionButton add3;
@@ -54,6 +55,10 @@ public class GroceryActivity extends AppCompatActivity {
         mgPr3 = findViewById(R.id.pinePrice);
         mgPr4 = findViewById(R.id.banaPrice);
         mgPr5 = findViewById(R.id.strawPrice);
+        name = findViewById(R.id.name);
+        Intent intent = getIntent();
+        String usrname = intent.getStringExtra("username");
+        name.setText("Hi," + usrname);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
