@@ -58,7 +58,7 @@ public class GroceryActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         Intent intent = getIntent();
         String usrname = intent.getStringExtra("username");
-        name.setText("Hi," + usrname);
+        name.setText("Hi," + "Joseph");
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
