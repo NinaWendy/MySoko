@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/search_outline.xml" value="0.127" />
-        <entry key="app/src/main/res/layout/activity_grocery.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_checkout_activivty.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_grocery.xml" value="0.2436750998668442" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

@@ -25,9 +25,9 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/cart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.925"
@@ -41,7 +41,7 @@
             android:layout_width="252dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/search_outline"
             android:queryHint="Search for grocery..."
             app:layout_constraintStart_toStartOf="parent"
@@ -198,7 +198,7 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView4" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView5"
+            android:id="@+id/cardMango"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -223,7 +223,7 @@
                     app:srcCompat="@drawable/mng" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/mango"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -241,15 +241,26 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Ksh."
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mangoPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mangoPrice" />
+
+                <TextView
+                    android:id="@+id/mangoPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/lato"
-                    android:text="Ksh. 200.0"
+                    android:text="400"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/mango"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView9"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/mango" />
 
                 <TextView
                     android:id="@+id/textView11"
@@ -260,13 +271,14 @@
                     android:text="Per piece"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/textView10"
+                    app:layout_constraintEnd_toEndOf="@+id/mangoPrice"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/textView10"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    app:layout_constraintTop_toBottomOf="@+id/mangoPrice"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton"
+                    android:id="@+id/fbMango"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -275,8 +287,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView10"
-                    app:layout_constraintTop_toTopOf="@+id/textView10"
+                    app:layout_constraintStart_toEndOf="@+id/mangoPrice"
+                    app:layout_constraintTop_toTopOf="@+id/mangoPrice"
                     app:srcCompat="@drawable/ic_baseline_add_24" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -287,10 +299,10 @@
             android:id="@+id/cardVie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
             app:cardCornerRadius="20dp"
-            app:layout_constraintStart_toEndOf="@+id/cardView5"
+            app:layout_constraintStart_toEndOf="@+id/cardMango"
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -346,7 +358,7 @@
                     app:srcCompat="@drawable/pine" />
 
                 <TextView
-                    android:id="@+id/textView99"
+                    android:id="@+id/pine"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -361,18 +373,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView77" />
 
                 <TextView
-                    android:id="@+id/textView100"
+                    android:id="@+id/pinePrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/lato"
-                    android:text="Ksh. 150.0"
+                    android:text="450"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView99"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/pine"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView99"
-                    app:layout_constraintTop_toBottomOf="@+id/textView99" />
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/pine" />
 
                 <TextView
                     android:id="@+id/textView110"
@@ -383,13 +395,14 @@
                     android:text="Per piece"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/textView100"
+                    app:layout_constraintEnd_toEndOf="@+id/pinePrice"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView100"
-                    app:layout_constraintTop_toBottomOf="@+id/textView100" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pinePrice"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton2"
+                    android:id="@+id/fbPine"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -398,9 +411,21 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView100"
-                    app:layout_constraintTop_toTopOf="@+id/textView100"
+                    app:layout_constraintStart_toEndOf="@+id/pinePrice"
+                    app:layout_constraintTop_toTopOf="@+id/pinePrice"
                     app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Ksh."
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pinePrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pinePrice" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -415,7 +440,7 @@
             app:cardBackgroundColor="@color/teal_200"
             app:cardCornerRadius="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+            app:layout_constraintTop_toBottomOf="@+id/cardMango">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -433,7 +458,7 @@
                     app:srcCompat="@drawable/coc" />
 
                 <TextView
-                    android:id="@+id/textView999"
+                    android:id="@+id/coconut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -448,18 +473,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView777" />
 
                 <TextView
-                    android:id="@+id/textView1100"
+                    android:id="@+id/coconutPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/lato"
-                    android:text="Ksh. 100.0"
+                    android:text="500"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView999"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/coconut"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView999"
-                    app:layout_constraintTop_toBottomOf="@+id/textView999" />
+                    app:layout_constraintStart_toEndOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/coconut" />
 
                 <TextView
                     android:id="@+id/textView1101"
@@ -470,13 +495,14 @@
                     android:text="Per piece"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/textView1100"
+                    app:layout_constraintEnd_toEndOf="@+id/coconutPrice"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView1100"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1100" />
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/coconutPrice"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton3"
+                    android:id="@+id/fbCococnut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -485,9 +511,22 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView1100"
-                    app:layout_constraintTop_toTopOf="@+id/textView1100"
+                    app:layout_constraintStart_toEndOf="@+id/coconutPrice"
+                    app:layout_constraintTop_toTopOf="@+id/coconutPrice"
                     app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Ksh."
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/coconutPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/coconutPrice"
+                    app:layout_constraintVertical_bias="0.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -520,7 +559,7 @@
                     app:srcCompat="@drawable/bana" />
 
                 <TextView
-                    android:id="@+id/textView995"
+                    android:id="@+id/banana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -535,18 +574,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView775" />
 
                 <TextView
-                    android:id="@+id/textView1105"
+                    android:id="@+id/banaPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/lato"
-                    android:text="Ksh. 50.0"
+                    android:text="450"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView995"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/banana"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView995"
-                    app:layout_constraintTop_toBottomOf="@+id/textView995" />
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/banana" />
 
                 <TextView
                     android:id="@+id/textView11005"
@@ -557,13 +596,14 @@
                     android:text="Per piece"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/textView1105"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView1105"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1105" />
+                    app:layout_constraintEnd_toEndOf="@+id/banaPrice"
+                    app:layout_constraintHorizontal_bias="0.884"
+                    app:layout_constraintStart_toStartOf="@+id/banaPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/banaPrice"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton5"
+                    android:id="@+id/fbBanana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -572,9 +612,21 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView1105"
-                    app:layout_constraintTop_toTopOf="@+id/textView1105"
+                    app:layout_constraintStart_toEndOf="@+id/banaPrice"
+                    app:layout_constraintTop_toTopOf="@+id/banaPrice"
                     app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Ksh."
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/banaPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/banaPrice" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -584,17 +636,18 @@
             android:id="@+id/cardView62"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="228dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             app:cardBackgroundColor="#80E91E63"
             app:cardCornerRadius="20dp"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView555"
             app:layout_constraintTop_toBottomOf="@+id/cardView7">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="20dp">
+                android:layout_margin="20dp"
+                android:padding="5dp">
 
                 <ImageView
                     android:id="@+id/imageView772"
@@ -607,7 +660,7 @@
                     app:srcCompat="@drawable/st" />
 
                 <TextView
-                    android:id="@+id/textView992"
+                    android:id="@+id/strawb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -622,18 +675,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView772" />
 
                 <TextView
-                    android:id="@+id/textView1102"
+                    android:id="@+id/strawPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/lato"
-                    android:text="Ksh. 80.0"
+                    android:text="250"
                     android:textColor="@color/black"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView992"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/strawb"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView992"
-                    app:layout_constraintTop_toBottomOf="@+id/textView992" />
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toBottomOf="@+id/strawb" />
 
                 <TextView
                     android:id="@+id/textView11012"
@@ -644,13 +697,14 @@
                     android:text="Per piece"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/textView1102"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/textView1102"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1102" />
+                    app:layout_constraintEnd_toEndOf="@+id/strawPrice"
+                    app:layout_constraintHorizontal_bias="0.923"
+                    app:layout_constraintStart_toStartOf="@+id/strawPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/strawPrice"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton23"
+                    android:id="@+id/fbStraw"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -659,9 +713,21 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView1102"
-                    app:layout_constraintTop_toTopOf="@+id/textView1102"
+                    app:layout_constraintStart_toEndOf="@+id/strawPrice"
+                    app:layout_constraintTop_toTopOf="@+id/strawPrice"
                     app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Ksh."
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/strawPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/strawPrice" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -676,6 +742,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_menu_open_24" />
+
+        <TextView
+            android:id="@+id/amt"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="24dp"
+            android:text="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cart" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

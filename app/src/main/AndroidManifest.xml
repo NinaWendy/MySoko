@@ -14,6 +14,12 @@
         android:theme="@style/Theme.MySoko"
         tools:targetApi="31">
         <activity
+            android:name=".RewardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".GroceryActivity"
             android:exported="false" />
         <activity
