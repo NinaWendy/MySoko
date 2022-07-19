@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -69,6 +70,7 @@ public class GroceryActivity extends AppCompatActivity {
                 tot += Integer.parseInt(mgPr.getText().toString());
                 total = String.valueOf((tot));
                 arrayList.add(itm);
+                Toast.makeText(GroceryActivity.this, "Item added to cart.", Toast.LENGTH_SHORT).show();
             }
         });
         add2.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +82,7 @@ public class GroceryActivity extends AppCompatActivity {
                 String itm = fruit2.getText().toString() + " " +" " + "Ksh." + mgPr2.getText().toString();
                 tot += Integer.parseInt(mgPr2.getText().toString());
                 total = String.valueOf((tot));
+                Toast.makeText(GroceryActivity.this, "Item added to cart.", Toast.LENGTH_SHORT).show();
                 arrayList.add(itm);
             }
         });
@@ -92,6 +95,7 @@ public class GroceryActivity extends AppCompatActivity {
                 String itm = fruit3.getText().toString() + " " +" " + "Ksh." + mgPr3.getText().toString();
                 tot += Integer.parseInt(mgPr3.getText().toString());
                 total = String.valueOf((tot));
+                Toast.makeText(GroceryActivity.this, "Item added to cart.", Toast.LENGTH_SHORT).show();
                 arrayList.add(itm);
             }
         });
@@ -104,6 +108,7 @@ public class GroceryActivity extends AppCompatActivity {
                 String itm = fruit4.getText().toString() + " " +" " + "Ksh." + mgPr4.getText().toString();
                 tot += Integer.parseInt(mgPr4.getText().toString());
                 total = String.valueOf((tot));
+                Toast.makeText(GroceryActivity.this, "Item added to cart.", Toast.LENGTH_SHORT).show();
                 arrayList.add(itm);
             }
         });
@@ -116,6 +121,7 @@ public class GroceryActivity extends AppCompatActivity {
                 String itm = fruit5.getText().toString() + " " +" " + "Ksh." + mgPr5.getText().toString();
                 tot += Integer.parseInt(mgPr5.getText().toString());
                 total = String.valueOf((tot));
+                Toast.makeText(GroceryActivity.this, "Item added to cart.", Toast.LENGTH_SHORT).show();
                 arrayList.add(itm);
             }
         });
